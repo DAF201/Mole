@@ -1,0 +1,3 @@
+# self_copy
+
+testzone
