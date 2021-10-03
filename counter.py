@@ -1,15 +1,9 @@
-
-# don't delete the line above, important!
-times = 0
+times=0
 times = times+1
 this = __file__
 print("I has run for %s times!" % times)
-if times == 1:
-    with open(__file__, 'r')as this_file:
-        this = this_file.readlines()[2:]
-else:
-    with open(__file__, 'r')as this_file:
-        this = this_file.readlines()[1:]
+with open(__file__, 'r')as this_file:
+    this = this_file.readlines()[1:]
 temp = ''
 for x in this:
     temp = temp+x
