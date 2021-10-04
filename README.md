@@ -1,3 +1,9 @@
 # self_copy
 
 testzone
+
+<img sre='https://github.com/DAF201/Mole/blob/main/Screenshot%20(395).png'>
+
+<img sre='https://github.com/DAF201/Mole/blob/main/Screenshot%20(396).png'>
+
+<img sre='https://github.com/DAF201/Mole/blob/main/Screenshot%20(397).png'>
