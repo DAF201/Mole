@@ -1,6 +1,7 @@
 times = 0
 PATH=''
 #this is the first mole!
+#this thing is build on bug, the first few time runs will comes with warning for sure
 times = times+1
 this = __file__
 
