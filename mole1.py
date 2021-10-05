@@ -2,6 +2,14 @@ times = 0
 PATH=''
 #this is the first mole!
 #this thing is build on bug, the first few time runs will comes with warning for sure
+
+
+
+#10/05/2021 update:
+"""
+This mole work for vscode terminal with command python mole(running mode not debug mode)
+However, it will cause the stack overflow when it comes to cmd and PowerShell
+"""
 times = times+1
 this = __file__
 
