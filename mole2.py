@@ -2,7 +2,7 @@ times = 0
 PATH = ''
 # this is the first mole!
 """
-This work on both for sure
+This work on both
 """
 import subprocess
 import os
