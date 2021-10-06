@@ -32,4 +32,4 @@ def change():
     except:
         change()
     os.remove(__file__)
-change()
+change()#I spend hours fixing the conflicts of subfile call-up and remove original one...and I found python file can delete itself...
