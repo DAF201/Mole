@@ -8,7 +8,7 @@ working on the issue of it goes right into the system-level paths and try to wri
 
 10/10/2021:
 
-...
+stop for a while
 
 <img src='https://github.com/DAF201/Mole/blob/main/Screenshot%20(395).png'>
 
